@@ -1,2 +1,2 @@
-# Algorithm-Experiments
-A comparative study of algorithms
+# Python vs R for Machine Learning
+A comparitive study of Python and R 
