@@ -116,7 +116,7 @@ class Ui_MainWindow(object):
         labels=["Positive["+str(positive)+"%]","Mixed Views["+str(mixed)+"%]","Negative["+
         str(negative)+"%]"]
         sizes=[positive,mixed,negative]
-        colors=["pink","lightgreen","lightblue"]
+        colors=["darkblue","purple","lightblue"]
         patches,texts=plt.pie(sizes,colors=colors,startangle=90)
         plt.legend(patches,labels,loc="best")
         plt.title("People are reacting on"+searchTerm)
