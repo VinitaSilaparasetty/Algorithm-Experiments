@@ -1,3 +1,11 @@
+<div class="column">
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
+  
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
+  
+  <img alt="GitHub" src="https://img.shields.io/github/license/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
+
+
 # Python vs R for Machine Learning
 
 A comparitive study of Python and R 
@@ -8,9 +16,3 @@ A comparitive study of Python and R
 
 
 
-<div class="column">
-    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
-  
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
-  
-  <img alt="GitHub" src="https://img.shields.io/github/license/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
