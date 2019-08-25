@@ -19,6 +19,7 @@ A comparitive study of Python and R
  At present, the most popular programming languages employed in the Artificial Intelligence sector, particularly in Machine Learning, are Python and R programming. Although there is a plethora of programming languages such as Spark etc. as tools, Python and R are the two programming languages that have become synonymous with Machine Learning. However, which of these languages provide security for Machine Learning apps?
  
 This paper is a comparative study on Python and R for Machine Learning. It highlights the benefits and drawbacks of both Python and R. The emphasis of this study is on security. Therefore an experiment has been designed, wherein a python application and an R application are tested using security check tools and the susceptibility of both the applications is recorded. Finally the vulnerabilities of both apps are tallied and the app with the least vulnerabilities is proven to be the most secure, which means the program used to code it is the most secure.
+
 In conclusion, Python is found to be more secure, powerful and versatile for Machine Learning as opposed to R.
 
 #### Keywords: Python, R, Artificial Intelligence, Data Science, Machine Learning
