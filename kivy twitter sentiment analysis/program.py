@@ -1,3 +1,4 @@
+#import libraries
 from textblob import TextBlob
 import sys, tweepy
 import matplotlib.pyplot as plt
@@ -31,9 +32,9 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
     def retranslateUi(self, MainWindow):
         translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(translate("MainWindow", "Twitter Sentiment Analysis"))
         self.pushButton.setText(translate("MainWindow", "ANALYZE"))
-        self.label.setText(translate("MainWindow", "Enter Hashtag to Search : "))
+        self.label.setText(translate("MainWindow", "Enter Desired Hashtag: "))
         self.label2.setText(translate("MainWindow", "Number of Tweets to Analyze :"))
     def numberofSearchTerms(self):
         self.numberofSearchTerms = QtWidgets.QTextEdit(self.centralwidget)
