@@ -4,7 +4,7 @@ import sys, tweepy
 import matplotlib.pyplot as plt
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-
+#create wifgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -56,7 +56,7 @@ class Ui_MainWindow(object):
 
                 
    
-   
+   #import secret keys for tweepy
         consumerKey="**"
         consumerSecret="**"
         accessToken="**-**"
@@ -72,6 +72,7 @@ class Ui_MainWindow(object):
         tweepy.items(numberofSearchTerms)
 
 
+        #initialize counters to 0.
         positive=0.00
         negative=0.00
         mixed=0.00
@@ -80,7 +81,7 @@ class Ui_MainWindow(object):
         def percentage(part,whole):
             return 100*float(part)/float(whole)
 
-
+#sentiment analysis
         def printhere():
             for tweet in tweets:
                 print(tweet.text)
@@ -102,6 +103,7 @@ class Ui_MainWindow(object):
         negative=format(negative,'.2f')
         mixed=format(mixed,'.2f')
 
+        #categorize results of sentiment analysis
         print('How people are reacting on'+searchTerm)
 
         if(polarity==0):
@@ -110,7 +112,7 @@ class Ui_MainWindow(object):
             print("Negatively")
         elif(polarity>0.00):
             print("Positively")
-
+#Display results of sentiment analysis
         labels=["Positive["+str(positive)+"%]","Mixed Views["+str(mixed)+"%]","Negative["+
         str(negative)+"%]"]
         sizes=[positive,mixed,negative]
