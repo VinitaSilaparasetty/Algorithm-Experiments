@@ -1,4 +1,4 @@
 # Python vs R for Machine Learning
 A comparitive study of Python and R 
 
-<img src="https://flic.kr/p/2h5cbQr" />
+![Alt text](https://raw.githubusercontent.com/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning/master/pythonvsr.JPG)
