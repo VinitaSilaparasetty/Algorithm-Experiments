@@ -1,10 +1,14 @@
-<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
-
-<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
-
-<img alt="GitHub" src="https://img.shields.io/github/license/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
-
-<img alt="Twitter URL" src="https://img.shields.io/twitter/url/http/twitter.com/officialvinita">
+<div class="row">
+  <div class="column">
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
+  </div>
+  <div class="column">
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
+  </div>
+  <div class="column">
+    <img alt="GitHub" src="https://img.shields.io/github/license/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
+  </div>
+</div>
 
 # Python vs R for Machine Learning
 
