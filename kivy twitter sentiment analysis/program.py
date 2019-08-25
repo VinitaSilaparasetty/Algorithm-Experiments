@@ -104,7 +104,7 @@ class Ui_MainWindow(object):
         mixed=format(mixed,'.2f')
 
         #categorize results of sentiment analysis
-        print('How people are reacting on'+searchTerm)
+        print('People's Reactions to'+searchTerm)
 
         if(polarity==0):
             print("Mixed Views")
@@ -119,7 +119,7 @@ class Ui_MainWindow(object):
         colors=["darkblue","purple","lightblue"]
         patches,texts=plt.pie(sizes,colors=colors,startangle=90)
         plt.legend(patches,labels,loc="best")
-        plt.title("People are reacting on"+searchTerm)
+        plt.title("People's reactions to"+searchTerm)
         plt.axis("equal")
         plt.tight_layout()
         plt.show()
