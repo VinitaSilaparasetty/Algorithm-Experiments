@@ -1,7 +1,6 @@
+![Reviewed_by Oxford_Academic](https://img.shields.io/badge/Reviewed_by-Oxford_Academic-blue.svg)
 <div class="column">
     <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
-    
-   ![Reviewed_by Oxford_Academic](https://img.shields.io/badge/Reviewed_by-Oxford_Academic-blue.svg)
    
   <img alt="GitHub" src="https://img.shields.io/github/license/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
 
