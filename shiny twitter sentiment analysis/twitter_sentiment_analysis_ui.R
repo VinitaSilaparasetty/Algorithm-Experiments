@@ -1,4 +1,5 @@
 library(shiny)
+library(plotrix)
 
 shinyUI(fluidPage(
   
@@ -21,7 +22,7 @@ shinyUI(fluidPage(
       submitButton("Analyze!"),
       
       
-      print(h6("  Be Patient, Good Things Take Time!"))
+      print(h6("Analyzing Tweets..."))
       
       
       
@@ -30,11 +31,10 @@ shinyUI(fluidPage(
     
     
     # 3D Exploded Pie Chart
-library(plotrix)
-slices <- c(10, 12, 4, 16, 8) 
-lbls <- c("happy", "sad", "angry")
-pie3D(slices,labels=lbls,explode=0.1,
-   main="Twitter Sentiment Analysis")
+  slices <- c(10, 12, 4,) 
+   lbls <- c("happy", "sad", "angry")
+     pie3D(slices,labels=lbls,explode=0.1,
+      main="Twitter Sentiment Analysis")
     )
   ) )
 )
