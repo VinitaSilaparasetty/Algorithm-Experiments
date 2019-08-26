@@ -1,8 +1,10 @@
 <div class="column">
-    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
+    <img alt="GitHub" src="https://img.shields.io/badge/Coded_with-Python-blue.svg">
    
-  <img alt="GitHub" src="https://img.shields.io/github/license/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning?style=plastic">
+  <img alt="GitHub" src="https://img.shields.io/badge/Coded_with-R-blue.svg">
     <img alt="GitHub" src="https://img.shields.io/badge/Reviewed_by-Oxford_Academic-blue.svg">
+    <img alt="GitHub" src="https://img.shields.io/badge/License-MIT-blue.svg">
+    
 
 # Python vs R for Machine Learning
 
