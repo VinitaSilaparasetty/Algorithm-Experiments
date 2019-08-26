@@ -29,9 +29,12 @@ shinyUI(fluidPage(
     
     
     
-    mainPanel(
-      dataTableOutput("table"),
-      plotOutput("plot")
+    # 3D Exploded Pie Chart
+library(plotrix)
+slices <- c(10, 12, 4, 16, 8) 
+lbls <- c("happy", "sad", "angry")
+pie3D(slices,labels=lbls,explode=0.1,
+   main="Twitter Sentiment Analysis")
     )
   ) )
 )
