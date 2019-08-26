@@ -24,7 +24,7 @@ In conclusion, Python is found to be more secure, powerful and versatile for Mac
 
 #### Keywords: Python, R, Artificial Intelligence, Data Science, Machine Learning
 
-### Reviews
+### Verdict
 
 "This paper is of relevance for teaching purposes."
 
