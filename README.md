@@ -23,7 +23,7 @@ In conclusion, Python is found to be more secure, powerful and versatile for Mac
 
 ### Verdict
 
-> "This paper is of relevance for teaching purposes."
+## > "This paper is of relevance for teaching purposes."
 
 ##### Oxford Academic
 ##### The Computer Journal
