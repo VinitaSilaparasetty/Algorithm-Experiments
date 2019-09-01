@@ -8,43 +8,43 @@ def percentage(part,whole):
     return 100*float(part)/float(whole)
 
 #secret keys for tweepy
-consumerKey="***"
-consumerSecret="***"
-accessToken="***"
-accessTokenSecret="***"
+con_key="***"
+con_sec="***"
+acc_tok="***"
+acc_sec="***"
 
 
-auth=tweepy.OAuthHandler(consumer_key=consumerKey,consumer_secret=consumerSecret)
-auth.set_access_token(accessToken,accessTokenSecret)
+auth=tweepy.OAuthHandler(consumer_key=con_key,consumer_secret=con_sec)
+auth.set_access_token(acc_tok,acc_sec)
 api=tweepy.API(auth)
 
-searchTerm=input("Enter Desired Hashtag: ")
-numberofSeachTerms=int(input("Number of Tweets to Analyze :"))
+search_term=input("Enter Desired Hashtag: ")
+num_search=int(input("Number of Tweets to Analyze :"))
 
-tweets=tweepy.Cursor(api.search, q=searchTerm, lang="English").items(numberofSeachTerms)
+tweets=tweepy.Cursor(api.search, q=search_term, lang="English").items(num_search)
 
 #initialize counters to 0
-positive=0.00
-negative=0.00
-mixed=0.00
-polarity=0.00
+pos=0.00
+neg=0.00
+mix=0.00
+pol=0.00
 
 #sentiment analysis
 for tweet in tweets:
     print(tweet.text)
     analysis=TextBlob(tweet.text)
-    polarity+=analysis.sentiment.polarity
-    if(analysis.sentiment.polarity==0.00):
-        mixed+=1
-    elif(analysis.sentiment.polarity<0.00):
-        negative+=1
-    elif(analysis.sentiment.polarity>0.00):
-        positive+=1
+    pol+=analysis.sentiment.pol
+    if(analysis.sentiment.pol==0.00):
+        mix+=1
+    elif(analysis.sentiment.pol<0.00):
+        neg+=1
+    elif(analysis.sentiment.pol>0.00):
+        pos+=1
 
-positive=percentage(positive,numberofSeachTerms)
-negative=percentage(negative,numberofSeachTerms)
-mixed=percentage(mixed,numberofSeachTerms)
-polarity=percentage(polarity,numberofSeachTerms)
+positive=percentage(pos,num_search)
+negative=percentage(neg,num_search)
+mixed=percentage(mix,num_search)
+polarity=percentage(pol,num_search)
 
 positive=format(positive,'.2f')
 negative=format(negative,'.2f')
@@ -63,7 +63,7 @@ elif(polarity>0.00):
 
 labels=["Positive["+str(positive)+"%]","Mixed Views["+str(mixed)+"%]","Negative["+str(negative)+"%]"]
 sizes=[positive,mixed,negative]
-colors=["darkblue","purple","lightblue"]
+colors=["orange","magenta","red"]
 patches,texts=plt.pie(sizes,colors=colors,startangle=90)
 plt.legend(patches,labels,loc="best")
 plt.title("People's Reactions to"+searchTerm)
