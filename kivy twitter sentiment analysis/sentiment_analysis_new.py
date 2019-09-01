@@ -11,55 +11,52 @@ def percentage(part,whole):
 
 
 #Secret keys for tweepy
-consumerKey="Kx05pI2ZHtRkQs6LHsLYOkeRK"
-consumerSecret="safrrew"
-accessToken="ss-agsdga"
-accessTokenSecret="slfjas;ojsjf" 
- 
+con_key="***"
+con_sec="***"
+acc_tok="***"
+acc_sec="***"
+
+
+auth=tweepy.OAuthHandler(consumer_key=con_key,consumer_secret=con_sec)
+auth.set_access_token(acc_tok,acc_sec)
+api=tweepy.API(auth)
 
 #Retrieving Data
-searchTerm=input("Enter Desired Hashtag: ")
-numberofSeachTerms=int(input("Number of Tweets to Analyze :")) 
+search_term=input("Enter Desired Hashtag: ")
+num_search=int(input("Number of Tweets to Analyze :"))
 
-tweets=tweepy.Cursor(api.search, q=searchTerm, lang="English").items(numberofSeachTerms)
+tweets=tweepy.Cursor(api.search, q=search_term, lang="English").items(num_search)
 
 #initialize counters to 0
-positive=0.00
-negative=0.00
-mixed=0.00
-polarity=0.00
+pos=0.00
+neg=0.00
+mix=0.00
+pol=0.00
 
-
-#Categorization
+#sentiment analysis
 for tweet in tweets:
-    print(tweet.text) 		#PrintingRecievedData
-    analysis=TextBlob(tweet.text)	#DeclareLoopConditions
-    polarity+=analysis.sentiment.polarity
-    if(analysis.sentiment.polarity==0.00):
-        mixed+=1
-    elif(analysis.sentiment.polarity<0.00):
-        negative+=1
-    elif(analysis.sentiment.polarity>0.00):
-        positive+=1
+    print(tweet.text)
+    analysis=TextBlob(tweet.text)
+    pol+=analysis.sentiment.pol
+    if(analysis.sentiment.pol==0.00):
+        mix+=1
+    elif(analysis.sentiment.pol<0.00):
+        neg+=1
+    elif(analysis.sentiment.pol>0.00):
+        pos+=1
 
-
-#Call Percentage Function
-positive=percentage(positive,numberofSeachTerms)
-negative=percentage(negative,numberofSeachTerms)
-mixed=percentage(mixed,numberofSeachTerms)
-polarity=percentage(polarity,numberofSeachTerms)
-
-
-#Converting To Float Valuess
+positive=percentage(pos,num_search)
+negative=percentage(neg,num_search)
+mixed=percentage(mix,num_search)
+polarity=percentage(pol,num_search)
 
 positive=format(positive,'.2f')
 negative=format(negative,'.2f')
 mixed=format(mixed,'.2f')
 
-
-
-
 print('People's Reactions to'+searchTerm)
+
+#categorize reactions
 
 if(polarity==0):
     print("Mixed Views")
@@ -68,14 +65,12 @@ elif(polarity<0.00):
 elif(polarity>0.00):
     print("Positively")
 
-#Plotting the PieChart
-
 labels=["Positive["+str(positive)+"%]","Mixed Views["+str(mixed)+"%]","Negative["+str(negative)+"%]"]
 sizes=[positive,mixed,negative]
-colors=["pink","lightgreen","lightblue"]
+colors=["orange","magenta","red"]
 patches,texts=plt.pie(sizes,colors=colors,startangle=90)
 plt.legend(patches,labels,loc="best")
-plt.title("People are reacting on"+searchTerm)
+plt.title("People's Reactions to"+searchTerm)
 plt.axis("equal")
 plt.tight_layout()
 plt.show()
