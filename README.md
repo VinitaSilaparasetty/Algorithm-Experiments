@@ -29,7 +29,7 @@ In conclusion, Python is found to be more secure, powerful and versatile for Mac
 ##### The Computer Journal
 ##### Section C: Computational Intelligence, Machine Learning and Data Analytics 
 
-###View Paper: https://www.academia.edu/40348544/Python_vs_R_For_Machine_Learning
+### View Paper: https://www.academia.edu/40348544/Python_vs_R_For_Machine_Learning
 
 <img src="https://github.com/VinitaSilaparasetty/Python-vs-R-for-Machine-Learning/blob/master/V.S.png?raw=true" alt="Paris" class="center">
 
