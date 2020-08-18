@@ -1,6 +1,8 @@
 <div class="column">
     <img alt="GitHub" src="https://img.shields.io/badge/Reviewed_by-Oxford_Academic-blue.svg">
     <img alt="GitHub" src="https://img.shields.io/badge/License-MIT-blue.svg">
+    <img src="https://zenodo.org/badge/196325231.svg" alt="DOI"></a>
+
     
 
 # Python vs R for Machine Learning
